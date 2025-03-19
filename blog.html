@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hash = window.location.hash;
+            if (hash === "#about") {
+                const aboutSection = document.getElementById("about");
+                if (aboutSection) {
+                    aboutSection.scrollIntoView({ behavior: "smooth" });
+                }
+            }
+        }); </script>
+    <script src="https://kit.fontawesome.com/91b0b7248e.js" crossorigin="anonymous"></script>
+    <style>
+        /* Same CSS as the main page */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #4a6fa5;
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #ddd;
+        }
+        
+        .blog-post {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+        
+        .blog-post h1 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .blog-post-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 1.5rem 0;
+        }
+        
+        .blog-post h2 {
+            color: #4a6fa5;
+            margin-top: 2rem;
+        }
+        
+        .blog-post p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .blog-post ul, .blog-post ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .blog-post blockquote {
+            border-left: 4px solid #4a6fa5;
+            padding-left: 1rem;
+            color: #555;
+            font-style: italic;
+            margin: 1.5rem 0;
+        }
+        
+        .blog-post .highlight {
+            background-color: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin: 1.5rem 0;
+        }
+        
+        .code-block {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+            margin: 1.5rem 0;
+        }
+        
+        .comment {
+            color: #98c379;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .social-links li {
+            margin: 0 10px;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><i class="fas fa-laptop-code"></i> DevTechBlog</div>
+                <ul class="nav-links">
+                    <li><a href="website.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="website.html#about"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a href="vickybytes.html"><i class="fas fa-building"></i> VickyBytes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <article class="blog-post">
+            <h1>How Google and NVIDIA Are Teaming Up to Solve Real-World Problems with AI: A Perspective</h1>
+            <div class="blog-post-meta">March 5, 2025 | By Chirag Gupta | Technology</div>
+            
+            <img src="google.jpg" alt="Developer Experience Tools">
+            
+            <p>
+                Years ago a developed passion for technology solutions which has become exciting to observe industry leaders Google and NVIDIA move the boundaries of AI potential. Their recent joint venture serves as proof that strong alliances bring out innovative power which delivers concrete benefits throughout healthcare sectors and energy systems and robotic systems.</p>
+            
+            <p>Google + NVIDIA: A Powerhouse Partnership in AI
+                Every aspect of Google's network remains exclusively committed to developing AI solutions that benefit humanity through the work of Google DeepMind alongside Google Cloud. The international AI leader NVIDIA has aligned with Google to support the development of AI and faster computing through its work on Android and advanced technology components and AI development toolkits for programmers.</p>
+                
+            <p>Google and NVIDIA proclaimed multiple important advances in their framework at the international NVIDIA GTC AI conference which occurred this week. The main highlights which caught my attention consisted of:</p>
+            
+            <h2>Supercharged AI Infrastructure: Google Cloud x NVIDIA GPUs</h2>
+            
+            <p>Supercharged AI Infrastructure: Google Cloud x NVIDIA GPUs
+                Training large-scale AI models requires heavy computational power which NVIDIA’s latest GPU models currently lead the market. Google Cloud has released the A4 VM framework which utilizes NVIDIA HGX B200 GPU technology available through general business scale-up programs. New A4X VMs with NVIDIA GB200 NVL72 technology will become available soon. </p>
+                
+            <p> The AI infrastructure expert in me views this development as a significant breakthrough because it provides better speed for training while delivering easy deployment capabilities and enhanced ability to tackle advanced AI issues. The Blackwell GPU family including RTX PRO 6000 Blackwell and GB300 received full application support which currently drives massive improvements in the future of AI computing capabilities.</p>
+            
+            <h2>Gemini reaches more developers because of its strategic relationship between DeepMind and NVIDIA.</h2>
+            
+            <p>
+               The collaboration between DeepMind and NVIDIA powers Gemini development access for more programmers.
+               The AI technology which Google DeepMind developed in their Gemini model reflects their enduring research endeavors and functions as their most sophisticated model at present. The close collaboration between NVIDIA and Gemini enables developers (similar to myself) and end users to access leading AI capabilities through a broader audience.</p>
+                
+            <p>   The developers also launched Gemma 3 as an open-source lightweight model that functions efficiently on NVIDIA GPUs.     Real-world applications featuring innovative AI capabilities become achievable for developers because Gemma 3 operates on NVIDIA GPUs without demanding extensive infrastructure access.
+            </p>
+                
+            <p>NVIDIA has proudly incorporated Google DeepMind SynthID watermarks into its Cosmos video generation platform. This represents the earliest implementation of such technology outside NVIDIA's facilities which reinforces public belief in AI-generated content thus facilitating the responsible development of AI capabilities.</p>
+            
+            <h2>AI functions as a solution to tackle complicated worldwide difficulties</h2>
+            <ul>
+                <li> Through this partnership AI technology serves both purposes of enhancing products and enhancing human life quality. These initiatives serve as examples which moved me.</li>
+                <br>
+                <li>The Smarter Energy Grids initiative merges Google’s initiative Tapestry with NVIDIA to enhance the performance and reliability of electric grid calculations toward achieving sustainable and efficient energy grids.</li>
+                <br>
+                <li>The collaboration between NVIDIA and Isomorphic Labs applies artificial intelligence to speed up medicine development procedures.</li>
+                <br>
+                <li>Through its partnership with NVIDIA Intrinsic develops robots with greater adaptability and capability by using Isaac foundation models.</li>
+                <br>
+                <li>DeepMind and NVIDIA have developed MuJoCo-Warp as an open-source physics simulator which speeds up research in robotics field.</li>
+            </ul>
+            <h2>Looking Ahead</h2>
+             <p>The joint effort between Google and NVIDIA represents my fundamental belief about technology which values its benefits as improvements in human quality of life. Google merges its AI competence with NVIDIA’s processing power to define the AI future and make it workable and constructive for everyone from developers to end-users across the world.</p>
+             
+             <p>Make sure to visit Google Cloud’s booth (#914) at GTC because it presents a chance to experience their groundbreaking work firsthand during the Google session.</p>
+        </article>
+        </div>
+
+    <footer>
+        <ul class="social-links">
+            <li><a target="_blank" href="https://github.com/chirag1689/"><i class="fab fa-github"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/chirag-gupta-20640b24a/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="mailto:guptachirag57@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+            <p>&copy; 2025 DevTechBlog. All rights reserved.</p>
+    </footer>
+            
