@@ -177,7 +177,7 @@
                 <div class="logo"><i class="fas fa-laptop-code"></i> DevTechBlog</div>
                 <ul class="nav-links">
                     <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
                     <li><a href="index.html#about"><i class="fas fa-user"></i> About Me</a></li>
                     <li><a href="vickybytes.html"><i class="fas fa-building"></i> VickyBytes</a></li>
                 </ul>
@@ -187,53 +187,53 @@
 
     <div class="container">
         <article class="blog-post">
-            <h1>How Google and NVIDIA Are Teaming Up to Solve Real-World Problems with AI: A Perspective</h1>
-            <div class="blog-post-meta">March 18, 2025 | By Chirag Gupta | Technology</div>
+            <h1>Introducing Data Science Agent in Colab Powered by Gemini 1.5</h1>
+            <div class="blog-post-meta">March 3, 2025 | By Chirag Gupta | Technology</div>
             
-            <img src="google.jpg" alt="Developer Experience Tools">
-            
-            <p>
-                Years ago a developed passion for technology solutions which has become exciting to observe industry leaders Google and NVIDIA move the boundaries of AI potential. Their recent joint venture serves as proof that strong alliances bring out innovative power which delivers concrete benefits throughout healthcare sectors and energy systems and robotic systems.</p>
-            
-            <p>Google + NVIDIA: A Powerhouse Partnership in AI
-                Every aspect of Google's network remains exclusively committed to developing AI solutions that benefit humanity through the work of Google DeepMind alongside Google Cloud. The international AI leader NVIDIA has aligned with Google to support the development of AI and faster computing through its work on Android and advanced technology components and AI development toolkits for programmers.</p>
-                
-            <p>Google and NVIDIA proclaimed multiple important advances in their framework at the international NVIDIA GTC AI conference which occurred this week. The main highlights which caught my attention consisted of:</p>
-            
-            <h2>Supercharged AI Infrastructure: Google Cloud x NVIDIA GPUs</h2>
-            
-            <p>Supercharged AI Infrastructure: Google Cloud x NVIDIA GPUs
-                Training large-scale AI models requires heavy computational power which NVIDIA’s latest GPU models currently lead the market. Google Cloud has released the A4 VM framework which utilizes NVIDIA HGX B200 GPU technology available through general business scale-up programs. New A4X VMs with NVIDIA GB200 NVL72 technology will become available soon. </p>
-                
-            <p> The AI infrastructure expert in me views this development as a significant breakthrough because it provides better speed for training while delivering easy deployment capabilities and enhanced ability to tackle advanced AI issues. The Blackwell GPU family including RTX PRO 6000 Blackwell and GB300 received full application support which currently drives massive improvements in the future of AI computing capabilities.</p>
-            
-            <h2>Gemini reaches more developers because of its strategic relationship between DeepMind and NVIDIA.</h2>
+            <img src="DataScience.png" alt="Developer Experience Tools">
             
             <p>
-               The collaboration between DeepMind and NVIDIA powers Gemini development access for more programmers.
-               The AI technology which Google DeepMind developed in their Gemini model reflects their enduring research endeavors and functions as their most sophisticated model at present. The close collaboration between NVIDIA and Gemini enables developers (similar to myself) and end users to access leading AI capabilities through a broader audience.</p>
-                
-            <p>   The developers also launched Gemma 3 as an open-source lightweight model that functions efficiently on NVIDIA GPUs.     Real-world applications featuring innovative AI capabilities become achievable for developers because Gemma 3 operates on NVIDIA GPUs without demanding extensive infrastructure access.
-            </p>
-                
-            <p>NVIDIA has proudly incorporated Google DeepMind SynthID watermarks into its Cosmos video generation platform. This represents the earliest implementation of such technology outside NVIDIA's facilities which reinforces public belief in AI-generated content thus facilitating the responsible development of AI capabilities.</p>
+                Hey folks! 👋</p>
             
-            <h2>AI functions as a solution to tackle complicated worldwide difficulties</h2>
+            <p>I'm super excited to share something I've been experimenting with recently—a Data Science Agent that runs in Colab, powered by Google's Gemini 1.5 model! 🎯 This is something I’ve been wanting to explore for a while—how can we leverage powerful AI models directly within our data science workflows?</p>
+                
+            <p>Well, Google dropped some 🔥 with their latest blog, and it inspired me to dive right in and build my own little version of this idea, with my twist.</p>
+            
+            <h2>🧠 What’s This All About?</h2>
+            
+            <p>So imagine this: You're working in Google Colab, trying to crunch some numbers, visualize data, or build ML models—but you have a personal AI assistant sitting right there with you, helping write code, debug, and even explain outputs. That's what this Data Science Agent is all about. </p>
+                
+            <p> Using Gemini 1.5 Pro (via Google's new APIs), I integrated this into a Colab workflow where the agent can:</p>
             <ul>
-                <li> Through this partnership AI technology serves both purposes of enhancing products and enhancing human life quality. These initiatives serve as examples which moved me.</li>
-                <br>
-                <li>The Smarter Energy Grids initiative merges Google’s initiative Tapestry with NVIDIA to enhance the performance and reliability of electric grid calculations toward achieving sustainable and efficient energy grids.</li>
-                <br>
-                <li>The collaboration between NVIDIA and Isomorphic Labs applies artificial intelligence to speed up medicine development procedures.</li>
-                <br>
-                <li>Through its partnership with NVIDIA Intrinsic develops robots with greater adaptability and capability by using Isaac foundation models.</li>
-                <br>
-                <li>DeepMind and NVIDIA have developed MuJoCo-Warp as an open-source physics simulator which speeds up research in robotics field.</li>
+                <li>Read data from your notebook</li>
+                <li>Understand your code context</li>
+                <li>Suggest improvements or generate new code snippets</li>
+                <li>Automate repetitive data tasks (cleaning, wrangling, etc.)</li>
+                <li>And even answer your questions in real time like a data science buddy.</li>        
             </ul>
-            <h2>Looking Ahead</h2>
-             <p>The joint effort between Google and NVIDIA represents my fundamental belief about technology which values its benefits as improvements in human quality of life. Google merges its AI competence with NVIDIA’s processing power to define the AI future and make it workable and constructive for everyone from developers to end-users across the world.</p>
-             
-             <p>Make sure to visit Google Cloud’s booth (#914) at GTC because it presents a chance to experience their groundbreaking work firsthand during the Google session.</p>
+            
+            <h2>🔧 How I Set It Up</h2>
+            
+            <p>Setting this up wasn’t rocket science. Here’s a quick breakdown of the process I followed:</p>
+            <ul>
+                <li>Integrated Gemini 1.5 with Colab using Google’s API access.</li>
+                <li>Created a Python-based agent loop that lets the model analyze code cells, outputs, and provide suggestions or run code.</li>
+                <li>Added some custom prompts to guide the AI to be more task-specific—whether I needed data cleaning, visualization, or model evaluation.</li>
+                <li>Fine-tuned the experience so that it feels interactive and doesn’t slow down the Colab environment.</li>
+            </ul>
+            
+            
+            <h2>🖥️ Use Cases I Explored</h2>
+            <p>Here’s where it shines:</p>
+            <ul>
+                <li>EDA (Exploratory Data Analysis): The agent helps automate charts, summaries, and outlier detection.</li>
+                <li>ML Model Building: Quick prototyping with model suggestions and code completion.</li>
+                <li>Code Explanation: Great for debugging and understanding what went wrong (or right!).</li>
+            </ul>
+            <h2>🚀 Final Thoughts</h2>
+             <p>For me, this is just the start. I’m already thinking about how this could be extended into full-stack data pipelines, MLOps workflows, or even integrated into VSCode or JupyterLab. The possibilities are massive.
+
+            <p>Let me know what you think, or if you want me to do a deeper dive into the code and setup in my next post!</p>
         </article>
         </div>
 
